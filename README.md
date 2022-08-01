@@ -6,7 +6,7 @@ Math-Magicians
 
 The project is a calculater designed using javaScript react framework
 
-this is the first step : the React frame work setup for the math-magicians project
+this is the first step : the React framework setup for the math-magicians project
 
 ## Built With
 
