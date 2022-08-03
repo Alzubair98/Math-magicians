@@ -21,38 +21,38 @@ class Calculator extends React.Component {
   }
 
   render() {
-    const obj = this.state;
+    const { obj } = this.state;
     return (
       <div className="calculator_container">
         <div className="result_div">{obj.next || obj.total || 0}</div>
         <div className="first_row">
-          <button type="button" className="button">AC</button>
-          <button type="button" className="button">+/-</button>
-          <button type="button" className="button">%</button>
-          <button type="button" className="button operation_button">+</button>
+          <button type="button" className="button" onClick={this.result}>AC</button>
+          <button type="button" className="button" onClick={this.result}>+/-</button>
+          <button type="button" className="button" onClick={this.result}>%</button>
+          <button type="button" className="button operation_button" onClick={this.result}>+</button>
         </div>
         <div className="first_row">
-          <button type="button" className="button">7</button>
-          <button type="button" className="button">8</button>
-          <button type="button" className="button">9</button>
-          <button type="button" className="button operation_button">x</button>
+          <button type="button" className="button" onClick={this.result}>7</button>
+          <button type="button" className="button" onClick={this.result}>8</button>
+          <button type="button" className="button" onClick={this.result}>9</button>
+          <button type="button" className="button operation_button" onClick={this.result}>x</button>
         </div>
         <div className="first_row">
-          <button type="button" className="button">4</button>
-          <button type="button" className="button">5</button>
-          <button type="button" className="button">6</button>
-          <button type="button" className="button operation_button">-</button>
+          <button type="button" className="button" onClick={this.result}>4</button>
+          <button type="button" className="button" onClick={this.result}>5</button>
+          <button type="button" className="button" onClick={this.result}>6</button>
+          <button type="button" className="button operation_button" onClick={this.result}>-</button>
         </div>
         <div className="first_row">
-          <button type="button" className="button">1</button>
-          <button type="button" className="button">2</button>
-          <button type="button" className="button">3</button>
-          <button type="button" className="button operation_button">+</button>
+          <button type="button" className="button" onClick={this.result}>1</button>
+          <button type="button" className="button" onClick={this.result}>2</button>
+          <button type="button" className="button" onClick={this.result}>3</button>
+          <button type="button" className="button operation_button" onClick={this.result}>+</button>
         </div>
         <div className="first_row">
-          <button type="button" className="button zero_button">0</button>
-          <button type="button" className="button">.</button>
-          <button type="button" className="button operation_button">=</button>
+          <button type="button" className="button zero_button" onClick={this.result}>0</button>
+          <button type="button" className="button" onClick={this.result}>.</button>
+          <button type="button" className="button operation_button" onClick={this.result}>=</button>
         </div>
       </div>
 
