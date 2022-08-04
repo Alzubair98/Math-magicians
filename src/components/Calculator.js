@@ -1,63 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      obj: {
-        total: null,
-        next: null,
-        operation: null,
-      },
-    };
-    this.result = this.result.bind(this);
-  }
+const Calculator = () => {
+  const [obj, addNewObject] = useState({ total: null, next: null, operation: null });
 
-  result(e) {
-    const { obj } = this.state;
-    const newObject = calculate(obj, e.target.textContent);
-    this.setState({ obj: newObject });
-  }
+  const result = (event) => {
+    const newObject = calculate(obj, event.target.textContent);
+    addNewObject(newObject);
+  };
 
-  render() {
-    const { obj } = this.state;
-    return (
-      <div className="calculator_container">
-        <div className="result_div">{obj.next || obj.total || 0}</div>
-        <div className="first_row">
-          <button type="button" className="button" onClick={this.result}>AC</button>
-          <button type="button" className="button" onClick={this.result}>+/-</button>
-          <button type="button" className="button" onClick={this.result}>%</button>
-          <button type="button" className="button operation_button" onClick={this.result}>+</button>
-        </div>
-        <div className="first_row">
-          <button type="button" className="button" onClick={this.result}>7</button>
-          <button type="button" className="button" onClick={this.result}>8</button>
-          <button type="button" className="button" onClick={this.result}>9</button>
-          <button type="button" className="button operation_button" onClick={this.result}>x</button>
-        </div>
-        <div className="first_row">
-          <button type="button" className="button" onClick={this.result}>4</button>
-          <button type="button" className="button" onClick={this.result}>5</button>
-          <button type="button" className="button" onClick={this.result}>6</button>
-          <button type="button" className="button operation_button" onClick={this.result}>-</button>
-        </div>
-        <div className="first_row">
-          <button type="button" className="button" onClick={this.result}>1</button>
-          <button type="button" className="button" onClick={this.result}>2</button>
-          <button type="button" className="button" onClick={this.result}>3</button>
-          <button type="button" className="button operation_button" onClick={this.result}>+</button>
-        </div>
-        <div className="first_row">
-          <button type="button" className="button zero_button" onClick={this.result}>0</button>
-          <button type="button" className="button" onClick={this.result}>.</button>
-          <button type="button" className="button operation_button" onClick={this.result}>=</button>
-        </div>
+  return (
+    <div className="calculator_container">
+      <div className="result_div">{obj.next || obj.total || 0}</div>
+      <div className="first_row">
+        <button type="button" className="button" onClick={result}>AC</button>
+        <button type="button" className="button" onClick={result}>+/-</button>
+        <button type="button" className="button" onClick={result}>%</button>
+        <button type="button" className="button operation_button" onClick={result}>+</button>
       </div>
+      <div className="first_row">
+        <button type="button" className="button" onClick={result}>7</button>
+        <button type="button" className="button" onClick={result}>8</button>
+        <button type="button" className="button" onClick={result}>9</button>
+        <button type="button" className="button operation_button" onClick={result}>x</button>
+      </div>
+      <div className="first_row">
+        <button type="button" className="button" onClick={result}>4</button>
+        <button type="button" className="button" onClick={result}>5</button>
+        <button type="button" className="button" onClick={result}>6</button>
+        <button type="button" className="button operation_button" onClick={result}>-</button>
+      </div>
+      <div className="first_row">
+        <button type="button" className="button" onClick={result}>1</button>
+        <button type="button" className="button" onClick={result}>2</button>
+        <button type="button" className="button" onClick={result}>3</button>
+        <button type="button" className="button operation_button" onClick={result}>+</button>
+      </div>
+      <div className="first_row">
+        <button type="button" className="button zero_button" onClick={result}>0</button>
+        <button type="button" className="button" onClick={result}>.</button>
+        <button type="button" className="button operation_button" onClick={result}>=</button>
+      </div>
+    </div>
 
-    );
-  }
-}
+  );
+};
 
 export default Calculator;
