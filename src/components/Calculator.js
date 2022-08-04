@@ -16,7 +16,7 @@ const Calculator = () => {
         <button type="button" className="button" onClick={result}>AC</button>
         <button type="button" className="button" onClick={result}>+/-</button>
         <button type="button" className="button" onClick={result}>%</button>
-        <button type="button" className="button operation_button" onClick={result}>+</button>
+        <button type="button" className="button operation_button" onClick={result}>÷</button>
       </div>
       <div className="first_row">
         <button type="button" className="button" onClick={result}>7</button>
