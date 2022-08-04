@@ -44,3 +44,8 @@ body {
 .zero_button {
   width: 50%;
 }
+
+.button:hover {
+  background-color: bisque;
+  cursor: pointer;
+}
