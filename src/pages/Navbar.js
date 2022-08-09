@@ -9,12 +9,12 @@ const Navbar = () => {
       text: 'Home',
     },
     {
-      id: 1,
+      id: 2,
       path: '/Calculator',
       text: 'Calculator',
     },
     {
-      id: 1,
+      id: 3,
       path: '/Quote',
       text: 'Quote',
     },
