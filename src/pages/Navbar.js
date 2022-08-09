@@ -21,13 +21,15 @@ const Navbar = () => {
   ];
 
   return (
-    <div>
-      {links.map((link) => (
-        <li className="navbar-item" key={link.id}>
-          <NavLink to={link.path} className="active-link">{link.text}</NavLink>
-        </li>
-      ))}
-      <h1>Math Magicians</h1>
+    <div className="nav-continer">
+      <h1 className="math-magicians">Math Magicians</h1>
+      <div className="options-continer">
+        {links.map((link) => (
+          <li className="navbar-item" key={link.id}>
+            <NavLink to={link.path} className="active-link">{link.text}</NavLink>
+          </li>
+        ))}
+      </div>
     </div>
   );
 };
