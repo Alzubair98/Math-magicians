@@ -1,5 +1,10 @@
-body {
-  padding: 15% 40% 0 40%;
+
+.container{
+  border: 1px solid;
+  min-height: 50vh;
+  display: flex;
+  padding: 10%;
+  gap: 50%;
 }
 
 .calculator_container {
@@ -48,4 +53,27 @@ body {
 .button:hover {
   background-color: bisque;
   cursor: pointer;
+}
+
+.Home-continare{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.welcome_text{
+  font-size: 1.9rem;
+  color: darkmagenta;
+  position: relative;
+  font-weight: bold;
+}
+
+.paragraph{
+  font-size: 1.5rem;
+}
+
+
+.Quote_continer{
+  padding-top: 5%;
+  text-align: center;
 }
