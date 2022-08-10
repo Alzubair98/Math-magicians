@@ -23,7 +23,7 @@ test('when press on button 5 the result will be updated', async () => {
     </MemoryRouter>,
   );
 
-  const button = screen.etByRole('button', { name: /5/i });
+  const button = screen.getByRole('button', { name: /5/i });
   const result = screen.findByTestId('result');
   fireEvent.click(button);
 
