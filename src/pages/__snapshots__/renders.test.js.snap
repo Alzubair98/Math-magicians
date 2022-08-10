@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar , home & Quote renderer test matches the snapshot for Navbar 1`] = `
+<div
+  className="nav-continer"
+>
+  <h1
+    className="math-magicians"
+  >
+    Math Magicians
+  </h1>
+  <div
+    className="options-continer"
+  >
+    <li
+      className="navbar-item"
+    >
+      <a
+        aria-current="page"
+        className="active-link active"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li
+      className="navbar-item"
+    >
+      <a
+        className="active-link"
+        href="/Calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li
+      className="navbar-item"
+    >
+      <a
+        className="active-link"
+        href="/Quote"
+        onClick={[Function]}
+      >
+        Quote
+      </a>
+    </li>
+  </div>
+</div>
+`;
+
+exports[`Navbar , home & Quote renderer test matches the snapshot for Navbar 2`] = `
+Array [
+  <div
+    className="nav-continer"
+  >
+    <h1
+      className="math-magicians"
+    >
+      Math Magicians
+    </h1>
+    <div
+      className="options-continer"
+    >
+      <li
+        className="navbar-item"
+      >
+        <a
+          aria-current="page"
+          className="active-link active"
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="navbar-item"
+      >
+        <a
+          className="active-link"
+          href="/Calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li
+        className="navbar-item"
+      >
+        <a
+          className="active-link"
+          href="/Quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </div>
+  </div>,
+  <div
+    className="Home-continare"
+  >
+    <h3
+      className="welcome_text"
+    >
+      Welcome to our page!
+    </h3>
+    <p
+      className="paragraph"
+    >
+      Mathematics from Ancient Greek μάθημα; máthēma: knowledge, study, learning is an area of knowledge that includes such topics as numbers arithmetic, number theory, formulas and related structures algebra, shapes and the spaces in which they are contained geometry, and quantities and their changes calculus and analysis. Most mathematical activity involves the use of pure reason to discover or prove the properties of abstract objects, which consist of either abstractions from nature or—in modern mathematics—entities that are stipulated with certain properties, called axioms. A mathematical proof consists of a succession of applications of some deductive rules to already known results, including previously proved theorems, axioms and in case of abstraction from nature some basic properties that are considered as true starting points of the theory under consideration
+    </p>
+    <p
+      className="paragraph"
+    >
+      Mathematics is used in science for modeling phenomena, which then allows predictions to be made from experimental laws. The independence of mathematical truth from any experimentation implies that the accuracy of such predictions depends only on the adequacy of the model. Inaccurate predictions, rather than being caused by incorrect mathematics, imply the need to change the mathematical model used. For example, the perihelion precession of Mercury could only be explained after the emergence of Einstein's general relativity, which replaced Newton's law of gravitation as a better mathematical model.
+    </p>
+  </div>,
+]
+`;
+
+exports[`Navbar , home & Quote renderer test matches the snapshot for Quote 1`] = `
+<div
+  className="Quote_continer"
+>
+  <h1>
+    “Mathematics is the most beautiful and most powerful creation of the human spirit.” – Stefan Banach
+  </h1>
+</div>
+`;
+
+exports[`Navbar , home & Quote renderer test matches the snapshot for caculator 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="text-container"
+  >
+    <h2>
+      Lets Do Some Math!
+    </h2>
+  </div>
+  <div
+    className="calculator_container"
+  >
+    <div
+      className="result_div"
+      data-testid="result"
+    >
+      0
+    </div>
+    <div
+      className="first_row"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="button operation_button"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+    </div>
+    <div
+      className="first_row"
+    >
+      <button
+        className="button"
+        data-testid="7"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="button operation_button"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+    </div>
+    <div
+      className="first_row"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="button operation_button"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+    </div>
+    <div
+      className="first_row"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="button operation_button"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+    </div>
+    <div
+      className="first_row"
+    >
+      <button
+        className="button zero_button"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="button operation_button"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navbar , home & Quote renderer test matches the snapshot for home 1`] = `
+<div
+  className="Home-continare"
+>
+  <h3
+    className="welcome_text"
+  >
+    Welcome to our page!
+  </h3>
+  <p
+    className="paragraph"
+  >
+    Mathematics from Ancient Greek μάθημα; máthēma: knowledge, study, learning is an area of knowledge that includes such topics as numbers arithmetic, number theory, formulas and related structures algebra, shapes and the spaces in which they are contained geometry, and quantities and their changes calculus and analysis. Most mathematical activity involves the use of pure reason to discover or prove the properties of abstract objects, which consist of either abstractions from nature or—in modern mathematics—entities that are stipulated with certain properties, called axioms. A mathematical proof consists of a succession of applications of some deductive rules to already known results, including previously proved theorems, axioms and in case of abstraction from nature some basic properties that are considered as true starting points of the theory under consideration
+  </p>
+  <p
+    className="paragraph"
+  >
+    Mathematics is used in science for modeling phenomena, which then allows predictions to be made from experimental laws. The independence of mathematical truth from any experimentation implies that the accuracy of such predictions depends only on the adequacy of the model. Inaccurate predictions, rather than being caused by incorrect mathematics, imply the need to change the mathematical model used. For example, the perihelion precession of Mercury could only be explained after the emergence of Einstein's general relativity, which replaced Newton's law of gravitation as a better mathematical model.
+  </p>
+</div>
+`;

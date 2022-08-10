@@ -17,7 +17,7 @@ const Calculator = () => {
           <h2>Lets Do Some Math!</h2>
         </div>
         <div className="calculator_container">
-          <div className="result_div">{obj.next || obj.total || 0}</div>
+          <div className="result_div" data-testid="result">{obj.next || obj.total || 0}</div>
           <div className="first_row">
             <button type="button" className="button" onClick={result}>AC</button>
             <button type="button" className="button" onClick={result}>+/-</button>
@@ -25,7 +25,7 @@ const Calculator = () => {
             <button type="button" className="button operation_button" onClick={result}>÷</button>
           </div>
           <div className="first_row">
-            <button type="button" className="button" onClick={result}>7</button>
+            <button type="button" className="button" data-testid="7" onClick={result}>7</button>
             <button type="button" className="button" onClick={result}>8</button>
             <button type="button" className="button" onClick={result}>9</button>
             <button type="button" className="button operation_button" onClick={result}>x</button>
