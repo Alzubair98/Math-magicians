@@ -23,6 +23,21 @@ describe('Navbar , home & Quote renderer test', () => {
     const tree = renderer.create(<Calculator />).toJSON();
     expect(tree).toMatchSnapshot();
   });
+  it('matches the snapshot for Navbar', () => {
+    const tree = renderer.create(
+      <MemoryRouter>
+        <Navbar />
+      </MemoryRouter>,
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-  
+  it('matches the snapshot for Navbar', () => {
+    const tree = renderer.create(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>,
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

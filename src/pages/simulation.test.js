@@ -10,10 +10,22 @@ test('when press on button the result will be updated', async () => {
   );
 
   const button = screen.getByTestId('7');
-  let result = screen.findByTestId('result');
+  const result = screen.findByTestId('result');
   fireEvent.click(button);
 
-  expect ((await result).textContent).toBe('7');
+  expect((await result).textContent).toBe('7');
 });
 
+test('when press on button 5 the result will be updated', async () => {
+  render(
+    <MemoryRouter>
+      <Calculator />
+    </MemoryRouter>,
+  );
 
+  const button = screen.etByRole('button', { name: /5/i });
+  const result = screen.findByTestId('result');
+  fireEvent.click(button);
+
+  expect((await result).textContent).toBe('5');
+});
