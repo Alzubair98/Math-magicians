@@ -8,6 +8,10 @@ The project is a calculater designed using javaScript react framework
 
 this is the first step : the React frame work setup for the math-magicians project
 
+## project Link
+
+(https://62f51a6a16ad8c14ca2211a1--genuine-mooncake-4a6c52.netlify.app/)
+
 ## Built With
 
 - Major languages : HTML, CSS, JavaScript
