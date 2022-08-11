@@ -11,7 +11,6 @@ const Calculator = () => {
 
   return (
     <>
-
       <div className="container">
         <div className="text-container">
           <h2>Lets Do Some Math!</h2>
